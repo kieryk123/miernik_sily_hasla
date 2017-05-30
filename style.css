@@ -1,0 +1,66 @@
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+						color: black;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+						color: #e74c3c;
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+						color: black;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+						color: #e74c3c;
+  }
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #34495e;
+	background-size: cover;
+	transition: all 0.5s linear;
+}
+
+#password {
+	width: 99%;
+	height: 50px;
+	font-size: 40px;
+	letter-spacing: 5px;
+}
+
+#title {
+	text-align: center;
+}
+
+.title-animation {
+  -webkit-animation: scale-up-center 0.4s linear infinite alternate both;
+	-moz-animation: scale-up-center 0.4s linear infinite alternate both;
+	animation: scale-up-center 0.4s linear infinite alternate both;
+}
+
+.background-animation {
+  background-image: url('crazy-dance.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
